@@ -4,7 +4,24 @@
 模块经 **RS485 转 TCP 透传设备** 联网（TCP Server 模式），集成直接建立长连接发送
 **Modbus RTU 原始帧**（无 MBAP 头），不依赖 pymodbus，零第三方依赖。
 
-## 已完成的配置
+## 安装
+
+**方式一：HACS（推荐）**
+HACS → 右上角三个点 → 自定义存储库 → 填 `https://github.com/fengxs2018/ha-modbus-relay`，
+类别选「集成」→ 添加后搜索「多路继电器」安装 → 重启 Home Assistant。
+
+**方式二：手动**
+把 `custom_components/modbus_relay/` 整个目录复制到 HA 配置目录的
+`custom_components/` 下，然后重启 Home Assistant。
+
+```bash
+# 例：HA OS 上就是 /config/custom_components/modbus_relay/
+cp -r custom_components/modbus_relay /config/custom_components/
+```
+
+重启后到「设置 → 设备与服务 → 添加集成」里搜索 **Modbus RTU 多路继电器**。
+
+## 本次实测环境
 
 | 项目 | 值 |
 | --- | --- |
