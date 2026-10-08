@@ -1,0 +1,18 @@
+turn_all:
+  name: 全部回路开关
+  description: 一次性打开或关闭该继电器模块的所有回路。
+  fields:
+    state:
+      name: 状态
+      description: true = 全部打开，false = 全部关闭。
+      required: true
+      default: true
+      selector:
+        boolean:
+    entry_id:
+      name: 集成条目 ID
+      description: 可选。当添加多个继电器模块时，指定要操作的那个。
+      required: false
+      example: "01J8Z9QWERTYUIOPASDFGHJ"
+      selector:
+        text:

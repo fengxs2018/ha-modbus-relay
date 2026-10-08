@@ -1,0 +1,5 @@
+{
+  "name": "Modbus RTU 多路继电器",
+  "render_readme": true,
+  "homeassistant": "2024.1.0"
+}

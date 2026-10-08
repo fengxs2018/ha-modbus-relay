@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "多路继电器 (Modbus RTU)",
+        "description": "填写 RS485 转网络透传设备的地址，以及继电器回路数量。",
+        "data": {
+          "host": "IP 地址 / 主机名",
+          "port": "TCP 端口",
+          "slave": "设备站号 (1-255)",
+          "channels": "继电器回路数量 (1-72)",
+          "name": "设备名称",
+          "scan_interval": "状态轮询间隔（秒，0 = 不轮询）",
+          "read_state": "回读继电器状态（关闭则只发指令）"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接设备，请检查 IP、端口和站号。"
+    },
+    "abort": {
+      "already_configured": "该设备已经添加过了。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "多路继电器设置",
+        "data": {
+          "channels": "继电器回路数量 (1-72)",
+          "scan_interval": "状态轮询间隔（秒，0 = 不轮询）",
+          "read_state": "回读继电器状态"
+        }
+      }
+    }
+  }
+}

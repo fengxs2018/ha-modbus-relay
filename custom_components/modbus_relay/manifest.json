@@ -1,0 +1,12 @@
+{
+  "domain": "modbus_relay",
+  "name": "Modbus RTU 多路继电器",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.zskjdg.com",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "",
+  "version": "1.0.0"
+}
